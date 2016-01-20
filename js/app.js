@@ -3,29 +3,21 @@ $(document).ready(function() {
   for ( i = 1; i <= 100; i++) {
 
     if ( i % 15 === 0) {
-      $( "li").append("Fizzbuzz");
+      $(".looping").append('<li> FizzBuzz </li>');
     }
     else if ( i % 3 === 0) {
-      $( "li").append("Fizz");
+      $(".looping").append('<li> Fizz </li>');
     }
 
     else if ( i % 5 === 0 ) {
-      $( "li").append("Buzz");
+      $(".looping").append('<li> Buzz </li>');
     }
 
     else {
-      $( "li").append(i);
+      $(".looping").append('<li>' + i + '</li>');
     }
 
   }
-
-
-
-
-
-
-
-
 
 
 });
